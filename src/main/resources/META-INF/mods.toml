@@ -7,7 +7,7 @@ modId="exhibition_toolkit"
 version="${file.jarVersion}"
 displayName="Exhibition Toolkit"
 authors="TeaConMC, 3TUSK"
-description="Useful things"
+description="Useful things in in-game convention"
 
 [[dependencies.exhibition_toolkit]]
 modId="forge"

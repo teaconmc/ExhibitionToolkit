@@ -26,7 +26,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 // definitions at gradle/teacon-forge.gradle
 teacon {
     modId = 'exhibition_toolkit'
-    modVersion = '1.0.0'
+    modVersion = '0.1.0'
     modLicense = 'BSD'
     modGitHubRepo = 'teaconmc/ExhibitionToolkit'
     modAuthors = ['3TUSK']
