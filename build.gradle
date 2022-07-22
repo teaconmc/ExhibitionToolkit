@@ -1,0 +1,52 @@
+buildscript {
+    repositories {
+        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+        maven { url = 'https://maven.minecraftforge.net' }
+        maven { url = 'https://maven.parchmentmc.org' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        classpath group: 'org.parchmentmc', name: 'librarian', version: '1.+'
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+    }
+}
+
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.parchmentmc.librarian.forgegradle'
+
+apply plugin: 'org.spongepowered.mixin'
+
+apply from: 'gradle/teacon-forge.gradle'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+// definitions at gradle/teacon-forge.gradle
+teacon {
+    modId = 'exhibition_toolkit'
+    modVersion = '1.0.0'
+    modLicense = 'BSD'
+    modGitHubRepo = 'teaconmc/ExhibitionToolkit'
+    modAuthors = ['3TUSK']
+    modDescription = 'Useful things'
+
+    platform = 'forge-1.18.2-40.1.0'
+    parchment = '2022.03.13'
+
+    // uncomment these lines if you need
+    modName = 'Exhibition Toolkit' // default to repo name
+    // modGitHubBranch = 1.18-forge // for referring the license
+    // modifyMemberAccess = true // for access transformer
+    useDataGeneration = true // for data generation
+    // publishTask = shadowJar // for shadow jar or other usages
+    // lazyTokens = ['minecraft_classpath': { project.configurations.shadow.asPath }] // for runtime tokens
+
+    // use './gradlew -q printModMeta > src/main/resources/META-INF/mods.toml' to generate mod meta
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
+

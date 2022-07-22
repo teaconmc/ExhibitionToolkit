@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "exhibition_toolkit:block/power_supply_bottom",
+    "side": "exhibition_toolkit:block/power_supply_side",
+    "top": "exhibition_toolkit:block/power_supply_top"
+  }
+}
