@@ -1,4 +1,4 @@
 {
-  "block.exhibition_toolkit.power_supply.name": "Power Supply",
-  "block.exhibition_toolkit.trash_can.name": "Trash Can"
+  "block.exhibition_toolkit.power_supply": "Power Supply",
+  "block.exhibition_toolkit.trash_can": "Trash Can"
 }
