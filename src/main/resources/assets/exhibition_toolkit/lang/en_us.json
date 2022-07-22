@@ -1,4 +1,5 @@
 {
   "block.exhibition_toolkit.power_supply": "Power Supply",
-  "block.exhibition_toolkit.trash_can": "Trash Can"
+  "block.exhibition_toolkit.trash_can": "Trash Can",
+  "item.exhibition_toolkit.useless_stick": "Seemingly Useless Stick"
 }
